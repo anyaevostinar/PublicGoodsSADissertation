@@ -1,0 +1,47 @@
+set description lyse_exp
+set email vostinar@msu.edu
+set email_when final
+
+set config_dir /mnt/home/anyaejo/PublicGoods/Fall15/config
+set dest_dir /mnt/home/anyaejo/PublicGoods/Fall15
+set class_pref 95
+set walltime 4
+set mem_request 3
+
+#51..60 lyse_comp ./avida -s $seed -set EVENT_FILE events-comp.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05
+
+#51..60 nop_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-nop.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05
+
+##Experiments
+51..80 lyse_denovo_1k ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 25 -set WORLD_Y 40
+
+51..80 lyse_denovo_4k ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 50 -set WORLD_Y 80
+
+51..80 lyse_denovo_10k ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 100 -set WORLD_Y 100
+
+51..80 lyse_denovo_40k ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200
+
+51..80 lyse_denovo_00002 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .00002 -set WORLD_X 100 -set WORLD_Y 100
+
+51..80 lyse_denovo_002 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .002 -set WORLD_X 100 -set WORLD_Y 100
+
+51..80 lyse_denovo_02 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .02 -set WORLD_X 100 -set WORLD_Y 100
+
+51..80 lyse_denovo_01 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .01 -set WORLD_X 100 -set WORLD_Y 100
+
+##Controls
+#51..80 lyse_denovo_1k_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 25 -set WORLD_Y 40
+
+#51..80 lyse_denovo_4k_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 50 -set WORLD_Y 80
+
+#51..80 lyse_denovo_10k_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 100 -set WORLD_Y 100
+
+#51..80 lyse_denovo_40k_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200
+
+#51..80 lyse_denovo_00002_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .00002 -set WORLD_X 100 -set WORLD_Y 100
+
+#51..80 lyse_denovo_002_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .002 -set WORLD_X 100 -set WORLD_Y 100
+
+#51..80 lyse_denovo_02_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .02 -set WORLD_X 100 -set WORLD_Y 100
+
+#51..80 lyse_denovo_01_cont ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-lyse.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set COPY_MUT_PROB .01 -set WORLD_X 100 -set WORLD_Y 100

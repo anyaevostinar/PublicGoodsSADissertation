@@ -1,0 +1,70 @@
+set description longterm 
+set email vostinar@msu.edu 
+set email_when final 
+set config_dir /mnt/home/anyaejo/PublicGoods/LongTerm/config 
+set dest_dir /mnt/home/anyaejo/PublicGoods/LongTerm 
+set class_pref 95 
+set walltime 4 
+set mem_request 3
+
+
+51 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_51.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+52 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_52.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+53 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_53.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+54 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_54.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+55 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_55.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+56 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_56.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+57 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_57.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+58 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_58.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+59 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_59.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+60 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_60.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+61 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_61.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+62 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_62.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+63 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_63.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+64 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_64.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+65 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_65.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+66 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_66.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+67 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_67.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+68 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_68.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+69 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_69.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+70 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_70.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+71 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_71.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+72 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_72.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+73 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_73.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+74 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_74.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+75 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_75.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+76 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_76.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+77 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_77.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+78 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_78.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+79 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_79.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+
+80 lyse_long_40k_cont ./avida -s $seed -set COPY_MUT_PROB .0002 -set WORLD_X 200 -set WORLD_Y 200 -set EVENT_FILE events_lyse_long_40k_80.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-control.cfg -set KABOOM_PROB .05 -set NO_MUT_INSTS "A"
+

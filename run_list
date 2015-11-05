@@ -1,0 +1,35 @@
+set description pgtests
+set email anyaejo@msu.edu
+set email_when Job
+
+set config_dir config
+set dest_dir /mnt/home/anyaejo/PublicGoods
+set class_pref 95
+set walltime 4
+set mem_request 3
+
+#51..60 lyse-broadcast_70 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-display.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .7
+
+#51..60 lyse-broadcast_20 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-display.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .2
+
+#51..60 lyse-broadcast_05 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-display.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .05
+
+#51..60 lyse-basic_20 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB .2
+
+#51..60 lyse-broadcast-unlethal_20 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-display.cfg -set ENVIRONMENT_FILE environment-unlethal.cfg -set KABOOM_PROB .2
+
+#51..60 lyse-basic-unlethal_20 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-unlethal.cfg -set KABOOM_PROB .2
+
+#51..60 lyse-basic_out001 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-out001.cfg -set KABOOM_PROB .2
+
+#51..60 lyse-basic_conv100 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment-conv100.cfg -set KABOOM_PROB .2
+
+51..60 lyse-basic_nonlethal ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment_nonlethal.cfg -set KABOOM_PROB .05
+
+51..60 lyse-basic_conv15 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment_d5_c15.cfg -set KABOOM_PROB .05
+
+51..60 lyse-basic_conv30 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment_d5_c30.cfg -set KABOOM_PROB .05
+
+51..60 lyse-basic_conv90 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment_d5_c90.cfg -set KABOOM_PROB .05
+
+51..60 lyse-basic_diff8 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment_d8_c30.cfg -set KABOOM_PROB .05

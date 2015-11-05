@@ -1,0 +1,65 @@
+set description control
+set email oharaer2@msu.edu
+set email_when Job
+
+set config_dir config
+set dest_dir /mnt/home/oharaer2/PublicGoods
+set class_pref 95
+set walltime 4
+set mem_request 3
+
+
+#51..60 pre-post-divide ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set DIVIDE_METHOD 0
+#Note, the above was run when lyse was still in the instset-heads.cfg file
+
+#51..60 pre-post-divide2-50 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set DIVIDE_METHOD 0 -set KABOOM_PROB .5
+
+#51..60 pre-post-divide2-70 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set DIVIDE_METHOD 0 -set KABOOM_PROB .7
+
+#51..60 pre-post-divide2-20 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set DIVIDE_METHOD 0 -set KABOOM_PROB .2
+
+#51..60 pre-post-divide2-5 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set DIVIDE_METHOD 0 -set KABOOM_PROB .05
+
+#51..60 pre-post-divide2-9 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set DIVIDE_METHOD 0 -set KABOOM_PROB .9
+
+#51..60 pre-post-divide-short70 ./avida -s $seed -set EVENT_FILE events-shortorg.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set DIVIDE_METHOD 0 -set KABOOM_PROB .7
+
+#51..80 con_diff_0.1 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_diffusion_0.1.cfg 
+
+#51..80 con_diff_0.01 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_diffusion_0.01.cfg
+
+#51..80 con_diff_0.05 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_diffusion_0.05.cfg
+
+#51..80 con_diff_0.001 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_diffusion_0.001.cfg
+
+#51..80 con_out_0.1 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_outflow_0.1.cfg
+
+#51..80 con_out_0.01 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_outflow_0.01.cfg
+
+#51..80 con_out_0.05 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_outflow_0.05.cfg
+
+#51..80 con_out_0.001 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_con_outflow_0.001.cfg
+
+#51..80 evolve_prob ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB -1
+
+#51..80 evolve_prob_pre ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads-pre.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB -1
+
+#51..80 evolve_prob_post ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads-post.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB -1 
+
+#51..80 mut_prob_0.0075 ./avida -s $seed -set COPY_MUT_PROB 0.0075 -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB 0.2
+
+#51..80 mut_prob_0.075 ./avida -s $seed -set COPY_MUT_PROB 0.075 -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB 0.2
+
+#51..80 mut_prob_0.75 ./avida -s $seed -set COPY_MUT_PROB 0.75 -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB 0.2
+
+#51..80 mut_prob_7.5 ./avida -s $seed -set COPY_MUT_PROB 7.5 -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM PROB 0.2
+
+#51..80 mut_prob_75 ./avida -s $seed -set COPY_MUT_PROB 75 -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB 0.2
+
+#51..80 kill_oldest ./avida -s $seed -set BIRTH_METHOD 1 -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB 0.2
+
+#51..80 pre_kaboom_prob_0.2 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads-pre.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB 0.2
+
+#51..80 post_kaboom_prob_0.2 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-heads-post.cfg -set ENVIRONMENT_FILE environment.cfg -set KABOOM_PROB 0.2
+
+51..80 control ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset_heads.cfg -set ENVIRONMENT_FILE environment_zero_con.cfg
